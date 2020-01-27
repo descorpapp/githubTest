@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="users_title">Users</string>
+    <string name="error_message">Unable to download data, possibly internet problems</string>
+    <string name="gists_text">Gists: %1$s</string>
+    <string name="repos_text">Repos: %1$s</string>
+    <string name="followers_text">Followers: %1$s</string>
+    <string name="api_rate_limit">API rate limit exceeded</string>
+</resources>

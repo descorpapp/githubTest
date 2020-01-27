@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/default_layout_padding">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tvUserAvatar"
+        android:layout_width="@dimen/details_avatar_size"
+        android:layout_height="@dimen/details_avatar_size"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:transitionName="imageTransition" />
+
+    <TextView
+        android:id="@+id/tvUserLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:transitionName="nameTransition" />
+
+    <TextView
+        android:id="@+id/tvWeblink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/global_text_padding"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvRepos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/global_text_padding"
+            android:text="@string/repos_text"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:id="@+id/tvGists"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/global_text_padding"
+            android:text="@string/gists_text"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:id="@+id/tvFollowers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/global_text_padding"
+            android:text="@string/followers_text"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/default_text_size" />
+    </LinearLayout>
+</LinearLayout>
